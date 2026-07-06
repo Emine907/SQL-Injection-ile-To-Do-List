@@ -2,7 +2,7 @@
 $sunucu = "sql301.infinityfree.com ";
 $kullanici = "f0_42348949";
 $sifre = "69738565";
-$veritabani = "todo_db";
+$veritabani = "if0_42348949_todo_db";
 
 //Veritabanı bağlantısı
 $baglan = mysqli_connect($sunucu, $kullanici, $sifre, $veritabani);
