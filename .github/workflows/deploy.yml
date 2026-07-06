@@ -1,4 +1,4 @@
-name: ProFreeHost Otomatik Canlıya Alma
+name:  ProFreeHost Otomatik Canlıya Alma
 
 on:
   push:
@@ -20,3 +20,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: htdocs/ # ProFreeHost'un ana dizini
+
