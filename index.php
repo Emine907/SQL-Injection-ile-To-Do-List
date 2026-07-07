@@ -14,13 +14,13 @@ if(isset($_POST['gorev']) && !empty($_POST['gorev'])) {
         $sorgu = "INSERT INTO gorevler (gorev) VALUES ('$yeni_gorev') ";
         //Başlangıçta burada mysqli_query kullanmıştım ama bu tek seferde tek sorgu çalıştıdığı için tek seferde daha fazla sorgu çalıştırabilmek için mysqli_multi_query kullanmaya başladım.
         mysqli_multi_query($baglan, $sorgu);
-        header("Location: /zafiyetli/index.php");
+        header("Location: https://to-do-list-sqlinjection.kesug.com/");
         exit;
 }
 if(isset($_GET['sil'])) {
         $silinecek_id = (int) $_GET['sil'];
         mysqli_query($baglan, "DELETE FROM gorevler WHERE id = $silinecek_id");
-        header("Location: /zafiyetli/index.php");
+        header("Location: https://to-do-list-sqlinjection.kesug.com/");
         exit;
 }
 //Görevleri listele
